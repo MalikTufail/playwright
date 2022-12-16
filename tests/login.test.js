@@ -3,7 +3,7 @@ const { chromium,test, expect } = require('@playwright/test');
 test.describe('Login functionality', () => {
   test.beforeEach(async() => {
     const window = await chromium.launch({
-      headless: false,
+      headless: true,
     });
     const context= await window.newContext();
     const page=await context.newPage()

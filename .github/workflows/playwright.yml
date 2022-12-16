@@ -19,8 +19,3 @@ jobs:
         run: npx playwright install --with-deps
       - name: Run Playwright tests
         run: npx playwright test
-        if: always()
-        with:
-          name: playwright-report
-          path: playwright-report
-          retention-days: 25

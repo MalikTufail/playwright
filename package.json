@@ -16,6 +16,8 @@
   },
   "homepage": "https://github.com/MalikTufail/playwright#readme",
   "devDependencies": {
-    "@playwright/test": "^1.28.1"
+    "@playwright/test": "^1.28.1",
+    "allure-commandline": "^2.20.1",
+    "experimental-allure-playwright": "^0.0.3"
   }
 }

@@ -1,9 +1,9 @@
 // @ts-check
 const { chromium,test, expect } = require('@playwright/test');
-
-test('homepage has title and links to intro page', async () => {
+test.describe('Login functionality', () => {
+  test('Navigate to Login', async () => {
   const window = await chromium.launch({
-    headless: true,
+    headless: false,
   });
   const context= await window.newContext();
   const page=await context.newPage()
@@ -13,5 +13,5 @@ test('homepage has title and links to intro page', async () => {
   )
   await page.click("text='Login'")
   await expect(page).toHaveTitle("Account Login")
-  
-});
+  })
+})

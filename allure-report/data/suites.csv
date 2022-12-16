@@ -1,0 +1,2 @@
+"Status","Start Time","Stop Time","Duration in ms","Parent Suite","Suite","Sub Suite","Test Class","Test Method","Name","Description"
+"passed","Fri Dec 16 15:39:10 PKT 2022","Fri Dec 16 15:39:17 PKT 2022","6564","","tests\example.test.js","Login functionality","","","Navigate to Login",""

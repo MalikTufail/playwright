@@ -3,7 +3,7 @@ const { chromium,test, expect } = require('@playwright/test');
 
 test('homepage has title and links to intro page', async () => {
   const window = await chromium.launch({
-    headless:false,
+    headless: true,
   });
   const context= await window.newContext();
   const page=await context.newPage()

@@ -39,6 +39,18 @@ test.only('Api put request', async ({request}) => {
     console.log(await resText.name)
 })
 
+// test.only('Api put request', async ({request}) => {
+//         const res = await request.patch(`https://reqres.in/api/users/${id}`, {
+//             data: {
+//                 "name": `${randomUser2}`,
+//                 "job": "QA Engineer"
+//             }
+//         })
+//         expect(res.status()).toBe(200)
+//         const resText = await res.json();
+//         expect(await resText.name).toBe(`${randomUser2}`)
+//         console.log(await resText.name)
+//     })
 
 test.only('Api delete request', async ({request}) => {
     const res = await request.delete(`https://reqres.in/api/users/${id}`)
